@@ -11,7 +11,7 @@ Le kit complet comprend deux versions distinctes, français et anglais :
 - Scripts de diagnostic PowerShell et Bash, avec instructions.
 - Copies Markdown et CSV lorsque disponibles.
 
-**Prix de lancement prévu : 49 CAD. Vente en préparation. Aucun paiement n’est ouvert depuis ce dépôt.**
+**Prix de lancement prévu : 39 CAD. Vente en préparation. Aucun paiement n’est ouvert depuis ce dépôt.**
 
 Consultez [l’exemple gratuit](APERCU_FR.md) pour évaluer la structure avant l’achat.
 
@@ -23,7 +23,7 @@ The full kit includes separate French and English editions:
 - PowerShell and Bash diagnostic scripts with instructions.
 - Markdown and CSV copies where available.
 
-**Planned launch price: CAD 49. Sales are being prepared. This repository does not accept payments.**
+**Planned launch price: CAD 39. Sales are being prepared. This repository does not accept payments.**
 
 Review the [free sample](PREVIEW_EN.md) before purchasing.
 
