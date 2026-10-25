@@ -1,68 +1,66 @@
 # Kit NetAdmin FR/EN
 
+Modèles réseau bilingues et outils de diagnostic pour documenter vos interventions.
+Bilingual network templates and diagnostic tools for documenting your work.
 
-Modèles pour préparer et documenter vos changements réseau.  
-Templates to prepare and document network changes.
-
+**[Boutique / Store — Payhip](https://payhip.com/b/aPeEB)** · Prix de lancement / Launch price : **39 CAD**, paiement unique / one-time payment. Vérifiez la version proposée avant l’achat / Check the offered version before purchasing.
 
 ## Français
 
+Le kit comprend des modèles Word de demande de changement, de tests et de retour arrière, un exemple fictif rempli, ainsi que des inventaires Excel VLAN, IP et interconnexions. Des copies Markdown/CSV et un diagnostic Bash simple sont également inclus.
 
-Le kit complet comprend deux versions distinctes, français et anglais :
-- Modèles Word : demande de changement, tests, retour arrière et exemple rempli.
-- Classeurs Excel : VLAN, adresses IP et interconnexions.
-- Scripts de diagnostic PowerShell et Bash, avec instructions.
-- Copies Markdown et CSV lorsque disponibles.
+### Nouvelle version préparée : v7
 
+- Diagnostic Windows automatique, sans adresse IP à saisir.
+- Page web locale : vue d’ensemble, inventaire, tests et routes, découverte réseau et CAB modifiable.
+- Export Excel .xlsx avec six feuilles : Inventaire, Routes, Tests, CAB, Découverte et Ports TCP.
+- Export PDF par l’impression du navigateur, pour la section affichée ou le dossier complet.
+- Sauvegarde du CAB modifié dans une page HTML autonome, à rouvrir plus tard.
+- Découverte active facultative : adresses IP, MAC disponibles, source de détection et ports TCP ouverts.
 
-**Prix de lancement : 39 CAD, paiement unique. [Acheter le kit sur Payhip](https://payhip.com/b/aPeEB).**
+**Lancement v7 :** extraire tout le ZIP. Double-cliquer sur `DEMARRER_NETADMIN.cmd` pour le diagnostic local, ou `DECOUVERTE_RESEAU.cmd` pour ajouter la découverte réseau. La page s’ouvre après la collecte. Relancer le CMD pour actualiser les données.
 
+La découverte utilise l’interface ayant la route IPv4 par défaut, sur le bloc /24 contenant le PC ou son sous-réseau réel s’il est plus petit : **254 adresses maximum**. Ports TCP testés : **22, 53, 80, 135, 139, 443, 445, 3389, 5985, 8080, 8443 et 9100**. Les autres VLAN, les plages publiques et les ports UDP ne sont pas explorés automatiquement.
 
-Consultez [l’exemple gratuit](APERCU_FR.md) pour évaluer la structure avant l’achat.
+OPEN : connexion TCP acceptée. CLOSED : connexion refusée. NO_RESPONSE : aucune connexion établie dans le délai. Un appareil peut bloquer les tests; le cache voisin peut contenir des entrées anciennes. Un port ouvert ne confirme ni l’identité du service ni une vulnérabilité. Utiliser la découverte sur votre réseau ou avec l’autorisation de son responsable.
 
+Prérequis : Windows 10/11, Windows PowerShell 5.1 et navigateur moderne. Aucun serveur à installer. Aucune configuration réseau ni politique PowerShell permanente n’est modifiée; les politiques de votre organisation restent applicables. Le programme ne récupère pas automatiquement les configurations Cisco/Fortinet ou les VLAN des commutateurs.
+
+**État de diffusion : la v7 a été préparée et testée localement. Le fichier Payhip n’a pas encore été remplacé par la v7. Ce dépôt présente les fonctionnalités; il ne distribue pas le ZIP payant.**
+
+Consultez [l’aperçu gratuit en français](APERCU_FR.md).
 
 ## English
 
+The kit includes Word change-request, test and rollback templates, a fictional worked example, Excel VLAN/IP/interconnection inventories, Markdown/CSV copies and a basic Bash diagnostic.
 
-The full kit includes separate French and English editions:
-- Word templates: change request, testing, rollback and worked example.
-- Excel workbooks: VLAN, IP and interconnection inventories.
-- PowerShell and Bash diagnostic scripts with instructions.
-- Markdown and CSV copies where available.
+### Newly prepared version: v7
 
+- Automatic Windows diagnostics without entering an IP address.
+- Local web page with overview, inventory, tests/routes, network discovery and editable CAB.
+- Genuine .xlsx export with six sheets: Inventory, Routes, Tests, CAB, Discovery and TCP Ports.
+- PDF export through browser printing, for the current section or full dossier.
+- Save edited CAB fields in a standalone HTML page that can be reopened later.
+- Optional active discovery of local private IPv4 devices, available MAC addresses, detection evidence and open TCP ports.
 
-**Launch price: CAD 39, one-time payment. [Buy the kit on Payhip](https://payhip.com/b/aPeEB).**
+**Launching v7:** extract the entire ZIP. Double-click `START_NETADMIN.cmd` for local diagnostics, or `NETWORK_DISCOVERY.cmd` to add discovery. The browser opens after collection. Rerun the launcher to refresh the snapshot.
 
+Discovery uses the default-route IPv4 interface and the PC’s local /24 slice, or its actual smaller subnet, with **at most 254 addresses**. Tested TCP ports: **22, 53, 80, 135, 139, 443, 445, 3389, 5985, 8080, 8443 and 9100**. Other VLANs, public ranges and UDP ports are not automatically explored.
 
-Review the [free sample](PREVIEW_EN.md) before purchasing.
+OPEN means a TCP connection was accepted; CLOSED means it was refused; NO_RESPONSE means no connection was established within the deadline. Devices may block these checks, and neighbor-cache entries may be stale. An open port does not establish service identity or a vulnerability. Use discovery on your own or an authorized network.
 
+Requires Windows 10/11, Windows PowerShell 5.1 and a modern browser. No server installation, network configuration changes or permanent PowerShell policy changes. Organizational policies still apply. Device configurations and switch VLANs are not automatically retrieved.
 
-## Mise à jour v4 / v4 update
+**Release status: v7 has been prepared and tested locally. The Payhip download has not yet been replaced with v7. This public repository documents the features and does not distribute the paid ZIP.**
 
-### Français
-
-La v4 ajoute un lanceur Windows par double-clic : `Francais/Scripts/Lancer-Diagnostic.cmd`. Après extraction du ZIP, il ouvre Windows PowerShell et demande la cible et le port TCP. Une cible vide utilise `localhost`; un port vide utilise `443`. Les résultats restent affichés jusqu’à ce que vous appuyiez sur Entrée.
-
-Le lanceur a été testé sous Windows PowerShell avec un port TCP local ouvert. Les saisies de cible et de port invalides ont aussi été vérifiées. Aucun réglage permanent de PowerShell n’est modifié; les politiques de votre organisation restent applicables. Ces scripts font du diagnostic et ne configurent pas les VLAN, le routage ou les pare-feu.
-
-**État de diffusion : la v4 est préparée. Son remplacement dans le téléchargement Payhip reste à effectuer; le produit actuellement publié contient la v3.** Le ZIP complet reste réservé à la boutique et n’est pas publié dans ce dépôt.
-
-### English
-
-Version 4 adds a double-click Windows launcher: `English/Scripts/Start-Diagnostic.cmd`. Extract the ZIP first. The launcher opens Windows PowerShell and asks for the target and TCP port. A blank target uses `localhost`; a blank port uses `443`. Results remain visible until you press Enter.
-
-The launcher was tested in Windows PowerShell against an open local TCP port. Invalid target and port inputs were also checked. No permanent PowerShell settings are changed; organizational policies still apply. These scripts run diagnostics and do not configure VLANs, routing or firewalls.
-
-**Release status: v4 is prepared. The Payhip download still needs to be replaced; the published product currently contains v3.** The full ZIP is distributed through the store and is not published in this repository.
+See the [free English preview](PREVIEW_EN.md).
 
 ## Portée et droits / Scope and rights
 
+Le CAB généré reste un **brouillon non approuvé** : compléter les décisions, responsables, sauvegardes, approbations et retour arrière avant une intervention. Relire les noms et adresses internes avant de partager les exports.
 
-Exemples fictifs. Modèles génériques à adapter aux équipements et aux politiques de votre organisation. Aucune affiliation à Cisco ou Fortinet. Le kit complet n’est pas inclus dans ce dépôt.
+Generated CAB documents remain **unapproved drafts**. Complete decisions, owners, backups, approvals and rollback before implementation. Review internal names and addresses before sharing exports.
 
+Exemples fictifs à adapter à votre environnement. Aucune affiliation à Cisco ou Fortinet. Les deux aperçus peuvent être adaptés pour vos changements internes. La redistribution du kit payant n’est pas autorisée.
 
-Fictional examples. Adapt the generic templates to your devices and organizational policies. No Cisco or Fortinet affiliation. The full kit is not included in this repository.
-
-
-Les deux aperçus peuvent être utilisés et adaptés pour vos changements internes. La redistribution du kit payant n’est pas autorisée. / You may use and adapt the two previews for internal changes. Redistribution of the paid kit is not authorized.
-
+Fictional examples to adapt to your environment. No Cisco or Fortinet affiliation. You may adapt the previews for internal changes. Redistribution of the paid kit is not authorized.
