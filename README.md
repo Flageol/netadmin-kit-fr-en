@@ -5,6 +5,28 @@ Bilingual network templates and diagnostic tools for documenting your work.
 
 **[Boutique / Store — Payhip](https://payhip.com/b/aPeEB)** · Prix de lancement / Launch price : **39 CAD**, paiement unique / one-time payment. Vérifiez la version proposée avant l’achat / Check the offered version before purchasing.
 
+## Captures de l’interface / Interface screenshots
+
+Captures réelles de NetAdmin v7 avec des données fictives de démonstration. / Actual NetAdmin v7 screenshots with fictional sample data.
+
+### Vue d’ensemble / Overview
+
+Diagnostic du PC et accès aux exports PDF et Excel. / PC diagnostics and PDF/Excel export controls.
+
+![Vue d’ensemble de NetAdmin v7 — données fictives](https://github.com/user-attachments/assets/c7072b11-eb04-419c-8a00-edb402d64fdd)
+
+### Découverte réseau / Network discovery
+
+Exemple d’appareils détectés, d’adresses MAC et de ports TCP ouverts. / Example of detected devices, MAC addresses and open TCP ports.
+
+![Découverte réseau NetAdmin v7 — données fictives](https://github.com/user-attachments/assets/772e6e77-266d-4228-b340-38fe1fa4c768)
+
+### Demande de changement / Change request
+
+CAB prérempli à compléter, sauvegarder et exporter. / Prefilled CAB to complete, save and export.
+
+![CAB NetAdmin v7 — brouillon de démonstration](https://github.com/user-attachments/assets/27753f0a-1e9e-49e8-a228-ea3bacaf6c82)
+
 ## Français
 
 Le kit comprend des modèles Word de demande de changement, de tests et de retour arrière, un exemple fictif rempli, ainsi que des inventaires Excel VLAN, IP et interconnexions. Des copies Markdown/CSV et un diagnostic Bash simple sont également inclus.
