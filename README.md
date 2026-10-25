@@ -13,19 +13,19 @@ Actual NetAdmin v7 screenshots with fictional sample data. / Captures réelles d
 
 PC diagnostics and PDF/Excel export controls. / Diagnostic du PC et accès aux exports PDF et Excel.
 
-![NetAdmin v7 overview — fictional sample data](https://github.com/user-attachments/assets/c7072b11-eb04-419c-8a00-edb402d64fdd)
+![NetAdmin v7 overview — fictional sample data](https://github.com/user-attachments/assets/708b6859-aed2-4db0-82df-f53cfa2d948c)
 
 ### Network discovery / Découverte réseau
 
 Example of detected devices, MAC addresses and open TCP ports. / Exemple d’appareils détectés, d’adresses MAC et de ports TCP ouverts.
 
-![NetAdmin v7 network discovery — fictional sample data](https://github.com/user-attachments/assets/772e6e77-266d-4228-b340-38fe1fa4c768)
+![NetAdmin v7 network discovery — fictional sample data](https://github.com/user-attachments/assets/79cd97d5-eb6f-4b51-b4be-2cb940a57a08)
 
 ### Change request / Demande de changement
 
 Prefilled CAB to complete, save and export. / CAB prérempli à compléter, sauvegarder et exporter.
 
-![NetAdmin v7 CAB — demo draft](https://github.com/user-attachments/assets/27753f0a-1e9e-49e8-a228-ea3bacaf6c82)
+![NetAdmin v7 CAB — demo draft](https://github.com/user-attachments/assets/07f62f57-7e26-4454-8d01-6ce4430764bb)
 
 ## English
 
