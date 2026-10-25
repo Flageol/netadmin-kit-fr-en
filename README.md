@@ -1,56 +1,31 @@
 # Kit NetAdmin FR/EN
 
-Modèles réseau bilingues et outils de diagnostic pour documenter vos interventions.
 Bilingual network templates and diagnostic tools for documenting your work.
+Modèles réseau bilingues et outils de diagnostic pour documenter vos interventions.
 
-**[Boutique / Store — Payhip](https://payhip.com/b/aPeEB)** · Prix de lancement / Launch price : **39 CAD**, paiement unique / one-time payment. Vérifiez la version proposée avant l’achat / Check the offered version before purchasing.
+**[Store / Boutique — Payhip](https://payhip.com/b/aPeEB)** · Launch price / Prix de lancement : **39 CAD**, one-time payment / paiement unique. Check the offered version before purchasing / Vérifiez la version proposée avant l’achat.
 
-## Captures de l’interface / Interface screenshots
+## Interface screenshots / Captures de l’interface
 
-Captures réelles de NetAdmin v7 avec des données fictives de démonstration. / Actual NetAdmin v7 screenshots with fictional sample data.
+Actual NetAdmin v7 screenshots with fictional sample data. / Captures réelles de NetAdmin v7 avec des données fictives de démonstration.
 
-### Vue d’ensemble / Overview
+### Overview / Vue d’ensemble
 
-Diagnostic du PC et accès aux exports PDF et Excel. / PC diagnostics and PDF/Excel export controls.
+PC diagnostics and PDF/Excel export controls. / Diagnostic du PC et accès aux exports PDF et Excel.
 
-![Vue d’ensemble de NetAdmin v7 — données fictives](https://github.com/user-attachments/assets/c7072b11-eb04-419c-8a00-edb402d64fdd)
+![NetAdmin v7 overview — fictional sample data](https://github.com/user-attachments/assets/c7072b11-eb04-419c-8a00-edb402d64fdd)
 
-### Découverte réseau / Network discovery
+### Network discovery / Découverte réseau
 
-Exemple d’appareils détectés, d’adresses MAC et de ports TCP ouverts. / Example of detected devices, MAC addresses and open TCP ports.
+Example of detected devices, MAC addresses and open TCP ports. / Exemple d’appareils détectés, d’adresses MAC et de ports TCP ouverts.
 
-![Découverte réseau NetAdmin v7 — données fictives](https://github.com/user-attachments/assets/772e6e77-266d-4228-b340-38fe1fa4c768)
+![NetAdmin v7 network discovery — fictional sample data](https://github.com/user-attachments/assets/772e6e77-266d-4228-b340-38fe1fa4c768)
 
-### Demande de changement / Change request
+### Change request / Demande de changement
 
-CAB prérempli à compléter, sauvegarder et exporter. / Prefilled CAB to complete, save and export.
+Prefilled CAB to complete, save and export. / CAB prérempli à compléter, sauvegarder et exporter.
 
-![CAB NetAdmin v7 — brouillon de démonstration](https://github.com/user-attachments/assets/27753f0a-1e9e-49e8-a228-ea3bacaf6c82)
-
-## Français
-
-Le kit comprend des modèles Word de demande de changement, de tests et de retour arrière, un exemple fictif rempli, ainsi que des inventaires Excel VLAN, IP et interconnexions. Des copies Markdown/CSV et un diagnostic Bash simple sont également inclus.
-
-### Nouvelle version préparée : v7
-
-- Diagnostic Windows automatique, sans adresse IP à saisir.
-- Page web locale : vue d’ensemble, inventaire, tests et routes, découverte réseau et CAB modifiable.
-- Export Excel .xlsx avec six feuilles : Inventaire, Routes, Tests, CAB, Découverte et Ports TCP.
-- Export PDF par l’impression du navigateur, pour la section affichée ou le dossier complet.
-- Sauvegarde du CAB modifié dans une page HTML autonome, à rouvrir plus tard.
-- Découverte active facultative : adresses IP, MAC disponibles, source de détection et ports TCP ouverts.
-
-**Lancement v7 :** extraire tout le ZIP. Double-cliquer sur `DEMARRER_NETADMIN.cmd` pour le diagnostic local, ou `DECOUVERTE_RESEAU.cmd` pour ajouter la découverte réseau. La page s’ouvre après la collecte. Relancer le CMD pour actualiser les données.
-
-La découverte utilise l’interface ayant la route IPv4 par défaut, sur le bloc /24 contenant le PC ou son sous-réseau réel s’il est plus petit : **254 adresses maximum**. Ports TCP testés : **22, 53, 80, 135, 139, 443, 445, 3389, 5985, 8080, 8443 et 9100**. Les autres VLAN, les plages publiques et les ports UDP ne sont pas explorés automatiquement.
-
-OPEN : connexion TCP acceptée. CLOSED : connexion refusée. NO_RESPONSE : aucune connexion établie dans le délai. Un appareil peut bloquer les tests; le cache voisin peut contenir des entrées anciennes. Un port ouvert ne confirme ni l’identité du service ni une vulnérabilité. Utiliser la découverte sur votre réseau ou avec l’autorisation de son responsable.
-
-Prérequis : Windows 10/11, Windows PowerShell 5.1 et navigateur moderne. Aucun serveur à installer. Aucune configuration réseau ni politique PowerShell permanente n’est modifiée; les politiques de votre organisation restent applicables. Le programme ne récupère pas automatiquement les configurations Cisco/Fortinet ou les VLAN des commutateurs.
-
-**État de diffusion : la v7 a été préparée et testée localement. Le fichier Payhip n’a pas encore été remplacé par la v7. Ce dépôt présente les fonctionnalités; il ne distribue pas le ZIP payant.**
-
-Consultez [l’aperçu gratuit en français](APERCU_FR.md).
+![NetAdmin v7 CAB — demo draft](https://github.com/user-attachments/assets/27753f0a-1e9e-49e8-a228-ea3bacaf6c82)
 
 ## English
 
@@ -77,12 +52,37 @@ Requires Windows 10/11, Windows PowerShell 5.1 and a modern browser. No server i
 
 See the [free English preview](PREVIEW_EN.md).
 
-## Portée et droits / Scope and rights
+## Français
 
-Le CAB généré reste un **brouillon non approuvé** : compléter les décisions, responsables, sauvegardes, approbations et retour arrière avant une intervention. Relire les noms et adresses internes avant de partager les exports.
+Le kit comprend des modèles Word de demande de changement, de tests et de retour arrière, un exemple fictif rempli, ainsi que des inventaires Excel VLAN, IP et interconnexions. Des copies Markdown/CSV et un diagnostic Bash simple sont également inclus.
+
+### Nouvelle version préparée : v7
+
+- Diagnostic Windows automatique, sans adresse IP à saisir.
+- Page web locale : vue d’ensemble, inventaire, tests et routes, découverte réseau et CAB modifiable.
+- Export Excel .xlsx avec six feuilles : Inventaire, Routes, Tests, CAB, Découverte et Ports TCP.
+- Export PDF par l’impression du navigateur, pour la section affichée ou le dossier complet.
+- Sauvegarde du CAB modifié dans une page HTML autonome, à rouvrir plus tard.
+- Découverte active facultative : adresses IP, MAC disponibles, source de détection et ports TCP ouverts.
+
+**Lancement v7 :** extraire tout le ZIP. Double-cliquer sur `DEMARRER_NETADMIN.cmd` pour le diagnostic local, ou `DECOUVERTE_RESEAU.cmd` pour ajouter la découverte réseau. La page s’ouvre après la collecte. Relancer le CMD pour actualiser les données.
+
+La découverte utilise l’interface ayant la route IPv4 par défaut, sur le bloc /24 contenant le PC ou son sous-réseau réel s’il est plus petit : **254 adresses maximum**. Ports TCP testés : **22, 53, 80, 135, 139, 443, 445, 3389, 5985, 8080, 8443 et 9100**. Les autres VLAN, les plages publiques et les ports UDP ne sont pas explorés automatiquement.
+
+OPEN : connexion TCP acceptée. CLOSED : connexion refusée. NO_RESPONSE : aucune connexion établie dans le délai. Un appareil peut bloquer les tests; le cache voisin peut contenir des entrées anciennes. Un port ouvert ne confirme ni l’identité du service ni une vulnérabilité. Utiliser la découverte sur votre réseau ou avec l’autorisation de son responsable.
+
+Prérequis : Windows 10/11, Windows PowerShell 5.1 et navigateur moderne. Aucun serveur à installer. Aucune configuration réseau ni politique PowerShell permanente n’est modifiée; les politiques de votre organisation restent applicables. Le programme ne récupère pas automatiquement les configurations Cisco/Fortinet ou les VLAN des commutateurs.
+
+**État de diffusion : la v7 a été préparée et testée localement. Le fichier Payhip n’a pas encore été remplacé par la v7. Ce dépôt présente les fonctionnalités; il ne distribue pas le ZIP payant.**
+
+Consultez [l’aperçu gratuit en français](APERCU_FR.md).
+
+## Scope and rights / Portée et droits
 
 Generated CAB documents remain **unapproved drafts**. Complete decisions, owners, backups, approvals and rollback before implementation. Review internal names and addresses before sharing exports.
 
-Exemples fictifs à adapter à votre environnement. Aucune affiliation à Cisco ou Fortinet. Les deux aperçus peuvent être adaptés pour vos changements internes. La redistribution du kit payant n’est pas autorisée.
+Le CAB généré reste un **brouillon non approuvé** : compléter les décisions, responsables, sauvegardes, approbations et retour arrière avant une intervention. Relire les noms et adresses internes avant de partager les exports.
 
 Fictional examples to adapt to your environment. No Cisco or Fortinet affiliation. You may adapt the previews for internal changes. Redistribution of the paid kit is not authorized.
+
+Exemples fictifs à adapter à votre environnement. Aucune affiliation à Cisco ou Fortinet. Les deux aperçus peuvent être adaptés pour vos changements internes. La redistribution du kit payant n’est pas autorisée.
